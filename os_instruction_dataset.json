@@ -1,0 +1,22 @@
+[
+  {
+    "instruction": "Explain Peterson's Algorithm for process synchronization and list its constraints.",
+    "input": "Module 1: Process Synchronization",
+    "output": "Peterson's Algorithm is a classical software solution for two-process critical-section synchronization using two shared variables: 'boolean flag[2]' and 'int turn'. It guarantees: 1) Mutual Exclusion (only one process in critical section), 2) Progress (processes not in remainder section participate in selection), and 3) Bounded Waiting (a limit exists on process preemption before entry)."
+  },
+  {
+    "instruction": "Compute the Turnaround and Waiting times given process completion times.",
+    "input": "Module 2: CPU Scheduling",
+    "output": "Turnaround Time (TAT) is calculated as: TAT = Completion Time (CT) - Arrival Time (AT). Waiting Time (WT) is calculated as: WT = Turnaround Time (TAT) - Burst Time (BT)."
+  },
+  {
+    "instruction": "State the safety criteria for Banker's Algorithm deadlock avoidance.",
+    "input": "Module 3: Deadlocks",
+    "output": "A state is safe if there exists an execution sequence <P0, P1, ..., Pn-1> where for each process Pi, the remaining resource requests (Need_i) can be satisfied by the currently available resources plus resources held by prior processes: Need_i <= Work. When Pi completes, Work = Work + Allocation_i."
+  },
+  {
+    "instruction": "What is Belady's Anomaly and which page replacement algorithm demonstrates it?",
+    "input": "Module 4: Memory Management",
+    "output": "Belady's Anomaly is the phenomenon where increasing the number of physical page frames results in an increase in the number of page faults for certain memory access patterns. It is typically observed in FIFO (First-In, First-Out) page replacement."
+  }
+]
